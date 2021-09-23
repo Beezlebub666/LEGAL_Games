@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+	/*******************************************************
+	*                     Allgemein
+	*******************************************************/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;}
+
+body {
+	background-color: #24252a;}
+	
+
+
+	/*******************************************************
+	*                  Navigation Bar
+	*******************************************************/
+
+
+	a {
+	font-weight: 500;
+	color: #edf0f1;
+	text-decoration: none;
+	font-size: 1.2em;}			/*1.2em = 1.2mal Font-size*/
+	
+	button {
+	background-color: rgba(0,136,169,1);}
+
+
+header{
+	margin-right: 1.5%;
+	bottom: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: left;
+	background-color: #24252a;}
+
+.logo {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	font-size: 50vw;
+	cursor: pointer;
+	margin-right: 20vw;
+
+	height: 85px;
+	order: -1;}
+
+nav {
+	order: 0;
+	width: 50%;
+	padding: .39% 0;
+	position: absolute;
+	top: 8px;
+	right: -160px;			/*160px naeher am Login Button*/
+	font-size: 18px;}
+
+.nav_links {
+	list-style: none;}
+
+.nav_links li {
+	display: inline-block;
+	padding: 0 2%;}
+
+.nav_links li:nth-child(1) {
+	padding: 0 2% 0 0;}	
+
+.nav_links li a {
+	transition: all 0.3s ease 0s;}
+
+.nav_links li hover {
+	color: #0088a9;}
+	
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: rgba(0,136,169,1);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+	/*******************************************************
+	*                   Spieleliste
+	*******************************************************/
+
+	* {
+		box-sizing: border-box;
+	  }
+	  
+	  body {
+		margin: 0;
+		font-family: Arial;
+	  }
+	  
+	  .header {
+		text-align: center;
+		padding: 32px;
+		color:#0088a9;
+	  }
+	  
+	  /* Create two equal columns that floats next to each other */
+	  .column {
+		float: left;
+		width: 50%;
+		padding: 10px;
+	  }
+	  
+	  .column img {
+		margin-top: 12px;
+	  }
+	  
+	  /* Clear floats after the columns */
+	  .row:after {
+		content: "";
+		display: table;
+		clear: both;
+	  }
+
+	  .container {
+		position: relative;
+		text-align: center;
+		color: white;
+		margin-top: 20px;		/*20px Abstand von dem*/
+	  }
+
+	/*******************************************************
+	*                       Spiele
+	*******************************************************/
+	  button {  /*Difficulty Buttons*/
+		color: white;
+		background-color: rgba(0,136,169,1);
+		border: none;
+	  }
+
+	/*******************************************************
+	*                       Footer
+	*******************************************************/
+footer {
+	margin-top: 50vmin;
+	margin-left: -22vmin;}
+
+.footer-container {				/*Der graue Kasten um den Footer*/
+	background-color: #212329;
+	padding: 3rem 0 9rem 0;}			
+
+.footer {
+	height: 16vh;
+	background-color: #212329;
+	color: #edf0f1;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto;}
+
+.footer-email-form, .footer-emai-form h2,											/*Setzt die Background Color hinter jeder Schrift Komponente des Footers auf #212329*/
+.footer-heading.footer-1, .footer-heading.footer-1 h2, .footer-heading.footer-1 a,
+.footer-heading.footer-2, .footer-heading.footer-2 h2, .footer-heading.footer-2 a
+.footer-heading.footer-3, .footer-heading.footer-3 h2, .footer-heading.footer-3 a {
+	background-color: #212329;}
+
+.footer-heading {
+	display: flex;
+	flex-direction: column;
+	margin-right: 4rem;}
+
+.footer-heading h2 {
+	margin-bottom: 2rem;}
+
+.footer-heading a {
+	color: #edf0f1;
+	text-decoration: none;
+	margin-bottom: 0.5rem;}
+
+.footer-heading a:hover {				/*Beim Maus-Hovern wird die Schriftfarbe rot*/ 
+	color: red;
+	transition: 0.3s ease-out;}
+
+.footer-email-form h2 {
+	margin-bottom: 2rem;}
+
+#footer-email {
+	width: 250px;
+	height: 40px;
+	border-radius: 4px;
+	outline: none;
+	border: none;
+	padding-left: 0.5rem;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	background-color: #edf0f1;}
+
+#footer-email::placeholder {
+	color: #b1b1b1;}
+
+#footer-email-btn {
+	width: 100px;
+	height: 40px;
+	border-radius: 4px;
+	background-color: #F9423D;
+	outline: none;
+	border: none;
+	color: lightgrey;
+	font-size: 1rem;}
+
+#footer-email-btn:hover {
+	cursor: pointer;
+	background-color: #337AF1;
+	transition: all 0.4s ease-out;}
+

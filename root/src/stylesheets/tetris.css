@@ -1,0 +1,52 @@
+	/*******************************************************
+	*       Wichtig für die Funktionalität des Spiels
+	*******************************************************/
+
+.container {
+    display: flex;
+    margin-left: 40%;
+}
+
+.grid {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap; /*Wenn die Kästchen am unteren Rand sind fangen sie von oben an*/
+    background-color: #bcd1ee;
+}
+
+.grid div {         /*.grid div spricht nur die div elemente in class grid an*/
+    height: 20px;
+    width: 20px;
+}
+
+.mini-grid { /* 80*80px */
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #bcd1ee;
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+}
+
+
+	/*******************************************************
+	*                         Style
+	*******************************************************/
+
+.startAndScore {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    margin-left: 40%;
+    color: white;
+}
+
+/*Beim Hovern werden sie heller*/
+#diffBtn0:hover, #diffBtn1:hover, #diffBtn2:hover {
+    opacity: 0.8;
+}

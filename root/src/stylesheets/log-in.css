@@ -1,0 +1,141 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+	/*******************************************************
+	*                   Log-in Button
+	*******************************************************/
+  .loginBtn {								
+    order: 3;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding: 16px 20px;
+    color: #f2f2f2;
+  }
+  .loginBtn:hover {
+    background-color: rgba(0,136,169,0.8);
+  }
+
+/*******************************************************
+*                   Log-in Window
+*******************************************************/
+
+/* Stylisiert das Username- und Passworteingabefeld  */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Definiert den Style des Buttons der den Loginprozess abschließt*/
+.loginSubmit {
+  background-color: rgba(0,136,169,1);  
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/*Beim hovern über den loginSubmit und Cancel Button werden diese etwas durchsichtiger/heller*/
+.loginSubmit:hover, .cancelbtn:hover {
+  opacity: 0.8;
+}
+
+/* Stylisierung des Cancelbuttons */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+span.close {
+  color:#f44336;    /*Kreuz zum Schließen rot*/
+}
+
+/* Zentriert den Avatar und positioniert das Kreuz zum Schließen oben rechts (, da das Bild und das Kreuz im imgcontainer sind)*/
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+/*Der Avatar wird auf die richtige Größe angepasst*/
+img.avatar {
+  width: 27%;
+}
+
+/*Erhöht den Abstand zwischen Login- und Passwortfeld zum Fensterrand und zu sich gegenseitig*/
+.loginContainer {
+  padding: 16px;
+  background-color: #2f3037;
+}
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+/* Loginfenster Hintergrund */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Volle Breite */
+  height: 100%; /* Volle Höhe */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Verdunkelt den Hintergrund, wenn das Loginfenster aufploppt */ 
+  padding-top: 60px;
+  color: white;  /*Schriftfarbe weiß*/
+}
+
+a {                /*Bugfix: Behebt die fälschliche schwarze Färbung des Forgot passwords? Schriftzugs*/
+  color: white;  /*Schriftfarbe weiß*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #2f3037;    /*Hintergrundfarbe des Login Fensters*/
+  margin: 5% auto 15% auto;        /* 5% Abstand von oben, 15% Abstand von unten und links und rechts zentriert */
+  border: 1px solid #888;       /*Umrandet das Log-in Fenster hellgrau*/
+  width: 36vmin;                  /* Verändert die Breite des Inhalts vom Loginfenster */
+}
+
+/* Das Kreuz zum Schließen */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Das Login Fenster zoomt animiert auf den Monitor */
+.animate {
+  animation: animatezoom 0.6s
+}
+
+  
+@keyframes animatezoom {                /*Die Transform Komponente geht fließend vom Wert 0 zu 1(volle Größe) um eine Zoom Animation zu erzeugen*/
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+

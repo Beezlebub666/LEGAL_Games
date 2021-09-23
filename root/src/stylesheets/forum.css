@@ -1,0 +1,68 @@
+	/*******************************************************
+	*                  Forum-Thread
+	*******************************************************/
+
+	div.header{
+		padding: 1vmin 0 0 0;
+	}
+	.title {
+		color: black;
+		text-align: left;
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	h1, h4, ol {
+		margin: 0;
+	}
+	p {
+		margin: 5px 0;
+		margin-right: 5px;
+	}
+	.top-bar {
+		background-color: skyblue;
+		padding: 5px 0 5px 20px;
+		margin-top: 6vmin;	/*Verschiebt die ganze Forum Seite nach unten*/
+	}
+	.main {
+		background-color: #F6F6EF;
+		padding: 10px 40px;
+	}
+
+	/*******************************************************
+	*                  Forum-Comments
+	*******************************************************/
+	.comments {
+		margin: 40px 0;
+	}
+	.comment {
+		margin: 10px 0;
+	}
+	.forumRow {
+		padding: 5px 0;
+	}
+	.bottom, .top-comment {
+		display: flex;
+		color: grey;
+		font-size: 12px;
+	}
+	.timestamp {
+		padding-right: 10px;
+	}
+	.commentBtn {
+		display: block;
+		margin: 10px 0;
+	}
+
+	.writeCommentField {
+		width: 36vmin;
+	}
+
+	.addCommentField input {
+		width: 48vmin;
+		height: 12vmin;
+	}
+
+	/*margin-bottom bei addCommentAuthor / margin-top bei addCommentButton*/
